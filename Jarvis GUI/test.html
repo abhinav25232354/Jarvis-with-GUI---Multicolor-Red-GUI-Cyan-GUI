@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Writing Animation</title>
+<style>
+  .text-container {
+    width: 300px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .text-animation {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: writeText 5s steps(40) infinite;
+  }
+
+  @keyframes writeText {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="text-container">
+  <div class="text-animation">This text writes letter by letter, then repeats infinitely.</div>
+</div>
+
+</body>
+</html>

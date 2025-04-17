@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="shortcut icon" href="/Favicon/favicon_red.png" type="image/x-icon">
+<title>Jarvis</title>
+</head>
+<body>
+
+  <!-- Primary Functions : Listen Command, Speak, Write -->
+  <!-- <div class="suggestions">
+    <div class="suggestion">Hello Jarvis</div>
+    <div class="suggestion">How are you</div>
+    <div class="suggestion">Tell me Whether <p style="font-size: 13px;">Any city you wish in india</p></div>
+    <div class="suggestion">News <p style="font-size: 13px;">Random news</p></div>
+    <div class="suggestion">Check Phone Number Details <p style="font-size: 13px;">Enter phoen number with country code</p></div>
+  </div> -->
+  <div class="user-input">
+    <input type="text" id="commandInput" placeholder="How may i help you sir ?">
+    <!-- <input type="text" id="commandInput" placeholder="Enter Command"> -->
+    <button onclick="processCommand()" class="submit"><span class="material-symbols-outlined">
+      arrow_upward
+      </span></button>
+  </div>
+  </div>
+</div>
+
+<div class="outputs" id="output">
+  <!-- <h2>Outputs</h2>
+  <br> -->
+  <p style="color: red; animation: blink 0.4s alternate infinite;">Jarvis : Listening...</p>
+  <!-- <button onclick="playSound()">Play sound</button> -->
+</div>
+<div class="whether" id="weatherOutput"></div>
+<div class="news" id="newsOutput"></div>
+
+<div class="reactor">
+  <div style="border: 2px solid rgba(255, 0, 0, 0.137);"></div>
+  <div class="reactorbg"><img src="/Images/reactorbg.png" alt=""></div>
+  <img src="/Images/arc_reactor-removebg-preview.png" alt="">
+  <!-- <img id="bg-reactor" src="/Images/backgroundreactor.png" alt=""> -->
+</div>
+<!-- <img id="background-border" src="/Images/background.png" alt=""> -->
+<div class="loader"><center style="opacity: 0.4; color: red;">01&nbsp;&nbsp; 02 &nbsp;&nbsp;03&nbsp;&nbsp; 04 &nbsp;&nbsp;05&nbsp;&nbsp; 06&nbsp;&nbsp; 07 &nbsp;&nbsp;08 &nbsp;&nbsp;09 &nbsp;&nbsp;10 &nbsp;&nbsp;11 &nbsp;&nbsp;12 &nbsp;&nbsp;13 &nbsp;&nbsp;14 &nbsp;&nbsp;15 &nbsp;&nbsp;16 &nbsp;&nbsp;17 &nbsp;&nbsp;18 &nbsp;&nbsp;19 &nbsp;&nbsp;20&nbsp;&nbsp; 21&nbsp;&nbsp; 22 &nbsp;&nbsp;23&nbsp;&nbsp; 24&nbsp;&nbsp; 25&nbsp;&nbsp; 26 &nbsp;&nbsp;27&nbsp;&nbsp; 28&nbsp;&nbsp; 29 &nbsp;&nbsp;30</center></div>
+
+<!-- <div class="todos">
+  <h3>todo1 : Connect with Python</h3>
+  <h3>todo2 : Connect with Python</h3>
+  <h3>. . . . .</h3>
+</div> -->
+<div id="system-details"></div>
+<!-- <div id="help"></div> -->
+
+<div class="container1">
+  <div style="margin-left: 10px;" class="date1" id="date1">Date: <span id="current-date1"></span></div>
+  <div style="margin-right: 10px;" class="time1" id="time1">Time: <span id="current-time1"></span></div>
+</div>
+<div class="jarvis-status">
+  <div id="status">Jarvis Status : Active <span id="current-date2"></span></div>
+  <!-- <div class="time2" id="time2">Version 1.5.0 <span id="current-time2"></span></div> -->
+</div>
+
+
+<div class="titles">
+  <p id="weather">Weather</p>
+  <p id="system_details">System Details</p>
+  <!-- <p id="news">News</p> -->
+  <!-- <p id="help_center">Help Center</p> -->
+</div>
+
+<div id="timer">
+  <span id="minutes">00</span>
+  <span id="seconds">00</span>
+  <span id="milliseconds">00</span>
+</div>
+
+
+<div class="website-container">
+  <button class="close-button" onclick="closeContainer()">Close</button>
+  <iframe src="https://wikipedia.com" allowtransparency="true" frameborder="0"></iframe>
+</div>
+
+
+<div id="hackingDiv">
+  <!-- The content of this div will be updated with hacking-style text -->
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
